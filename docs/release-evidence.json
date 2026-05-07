@@ -1,22 +1,59 @@
 {
   "product": "mogrt-title-asset-qa",
   "tag": "v0.1.0-alpha.1",
-  "status": "pre-release-pending",
+  "status": "released",
+  "updatedAt": "2026-05-07T23:24:05.072Z",
   "manualTestStatus": "手動テスト未実施",
   "automatedVerification": {
-    "npmTest": "pending",
-    "npmRunValidate": "pending",
-    "npmRunBuild": "pending"
+    "npmTest": "passed",
+    "npmRunValidate": "passed",
+    "npmRunBuild": "passed",
+    "firstPassOutput": {
+      "npmTest": "> mogrt-title-asset-qa@0.1.0-alpha.1 test\n> node tests/product.test.mjs\n\n{\n  \"product\": \"mogrt-title-asset-qa\",\n  \"scenarios\": 4,\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  }\n}",
+      "npmRunValidate": "> mogrt-title-asset-qa@0.1.0-alpha.1 validate\n> node src/cli/index.js --input samples/representative-suite.json --output dist/mogrt-title-asset-qa-representative-report.json\n\n{\n  \"outputPath\": \"dist/mogrt-title-asset-qa-representative-report.json\",\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  },\n  \"scenarios\": 4\n}",
+      "npmRunBuild": "> mogrt-title-asset-qa@0.1.0-alpha.1 build\n> node scripts/build-docs-zip.mjs\n\n{\n  \"zipPath\": \"D:\\\\AI\\\\WindowsApp\\\\mogrt-title-asset-qa\\\\dist\\\\mogrt-title-asset-qa-docs.zip\"\n}"
+    }
   },
   "github": {
     "repo": "https://github.com/Sunmax0731/mogrt-title-asset-qa",
-    "releaseUrl": null,
-    "prerelease": null,
-    "latest": null,
-    "assetCount": 0
+    "releaseUrl": "https://github.com/Sunmax0731/mogrt-title-asset-qa/releases/tag/v0.1.0-alpha.1",
+    "tagName": "v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false,
+    "latestEndpoint": {
+      "latestEndpointStatus": "not-found-or-not-latest",
+      "latestTag": null,
+      "stderr": "gh: Not Found (HTTP 404)\n"
+    },
+    "assetCount": 3,
+    "assets": [
+      "manual-test.md",
+      "mogrt-title-asset-qa-docs.zip",
+      "strict-manual-test-addendum.md"
+    ]
   },
   "git": {
-    "mainOriginClean": null,
-    "codexBranchesRemaining": null
+    "mainOriginCleanBeforeEvidenceCommit": {
+      "mainOriginClean": true,
+      "aheadBehind": {
+        "ahead": 0,
+        "behind": 0
+      },
+      "status": "",
+      "codexBranchesRemaining": [
+        "codex/closed-alpha-release"
+      ]
+    }
+  },
+  "assets": [
+    "dist/mogrt-title-asset-qa-docs.zip",
+    "docs/manual-test.md",
+    "docs/strict-manual-test-addendum.md"
+  ],
+  "qcds": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
   }
 }
